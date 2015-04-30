@@ -1,0 +1,12 @@
+.avaliaBases{
+	margin-top: 15px;
+	margin-left: auto;
+}
+
+.erroDeBases{
+	color: red;
+}
+
+.acertoDeBases{
+	color:green;
+}
