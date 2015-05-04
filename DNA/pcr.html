@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<title>PCR</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="jumbotron">PCR</h1>
+		</div>
+		<div class="container">
+			<ul class="nav nav-tabs">
+				<li id="index"><a href="index.html">Index</a></li>
+				<li id="idPCR" class="active"><a href="#">PCR</a></li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="container">
+				<div class="container col-md-4 cadeiaDNA">
+					<form class="formDNA">
+						Sequencia 5': <input type="text" id="txtDNA5">
+						</br>
+						Sequencia 3': <input type="text" id="txtDNA3">
+					</form>
+				</div>
+				<div class="container col-md-4 oligo">
+					<form class="formOligo">
+						Oligo: <input type="text" maxlength="6" id="txtOligo">
+					</form>
+					<div id="oligoSizeError" class="acertoDeOligo">Erro de Tamanho</div>
+				</div>
+				<button class="col-md-2" id="btnOligo">Enviar</button>
+			</div>
+		</div>
+			<div class="container resultadoLigacao">
+				</div class="row row-list dnaAssembly">
+					<div class="col-xs-3 dna5">
+					</div>
+					<div class="col-xs-3 dna3">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script rel="javascript" src="JS/pcrLogic.js"></script>
+	<footer></footer>
+</html>

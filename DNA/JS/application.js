@@ -18,8 +18,8 @@ var main = function(){
 	}
 
 	$("#btnAvaliaBases").click(function(){
-		var base3 = $(".baseNitrogenada5 > .basesNitrogenadas option:selected").text();
-		var base5 = $(".baseNitrogenada3 > .basesNitrogenadas option:selected").text();
+		var base5 = $(".baseNitrogenada5 > .basesNitrogenadas option:selected").text();
+		var base3 = $(".baseNitrogenada3 > .basesNitrogenadas option:selected").text();
 
 		if(ligacoesDNA(base5,base3) == true){
 
@@ -29,7 +29,7 @@ var main = function(){
 		}else{
 			
 			$(".dna5").append("<p class='erroDeBases'>"+base5+"</p>");
-			$(".dna3").append("<p class='erroDeBases'>"+base5+"</p>");
+			$(".dna3").append("<p class='erroDeBases'>"+base3+"</p>");
 			
 			alert("Erro de Bases!");
 		}
